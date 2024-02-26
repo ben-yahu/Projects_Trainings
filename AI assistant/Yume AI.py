@@ -152,7 +152,7 @@ def news():
      country = coun_abb[coun]
      querystring = {"topic": topic,"country": country,"lang":"en"}
      headers = {
-	   "X-RapidAPI-Key": "1282f16a1emsha50564a30020370p16bafejsnb77cd7b7f870",
+	   "X-RapidAPI-Key": "your api key",
 	   "X-RapidAPI-Host": "real-time-news-data.p.rapidapi.com"
      }
      response = requests.request("GET", url, headers=headers, params=querystring)
@@ -245,8 +245,8 @@ def open2(query):
 
 def whatsapp():
   user_name = {
-        'mom':'+918156830487',
-        'dad':'+919302337007'
+        'mom':'***',
+        'dad':'***'
         }     
   try:
         speak("Who should i send message to?")
@@ -360,7 +360,7 @@ def music():
    que = commandmic()
    querystring = {"q": que,"type": opt,"limit":"5"}
    headers = {
-	 "X-RapidAPI-Key": "1282f16a1emsha50564a30020370p16bafejsnb77cd7b7f870",
+	 "X-RapidAPI-Key": "your api",
 	 "X-RapidAPI-Host": "spotify-web2.p.rapidapi.com"
    }
    response = requests.request("GET", url, headers=headers, params=querystring)
@@ -656,8 +656,8 @@ def initiation(quo, query, count):
     count+=1
    return count
  
-api_key = "f69d316f"
-openai.api_key = "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"  
+api_key = "api key"
+openai.api_key = "your api key"  
 engine = pyttsx3.init()
 
 if __name__ == "__main__":
